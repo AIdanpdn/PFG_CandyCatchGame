@@ -6,7 +6,7 @@ public class Candy : MonoBehaviour
 {
     [SerializeField] GameObject[] _candy;
     [SerializeField] public int[] _candyValue;
-
+    private GameObject _candyToSpawn;
     int _waitTime;
     float _timer = 0.0f;
     public int _candyRNG;
@@ -30,8 +30,8 @@ public class Candy : MonoBehaviour
             if (_timer > _waitTime)
             {
                 _timer = _timer - _waitTime;
-                GameObject _candyToSpawn = _candy[CandyRNG()];
-                SpawnCandy(_candyToSpawn);
+                _candyToSpawn = _candy[CandyRNG()];
+                SpawnCandy();
                 _waitTime = Random.Range(1, 4);
                 i = i + 1;
             }
@@ -56,10 +56,10 @@ public class Candy : MonoBehaviour
         return _candyPosRNG;
     }
 
-    void SpawnCandy(GameObject _candyToSpawn)
+    void SpawnCandy()
     {
         CandyPosRNG();
-        Instantiate(_candyToSpawn);
-        _candyToSpawn.transform.SetPositionAndRotation(new Vector3(_candyPosRNG, 5, 0), new Quaternion(0, 0, 0, 0));
+        GameObject _spawnedCandy = Instantiate(_candyToSpawn);
+        _spawnedCandy.transform.SetPositionAndRotation(new Vector3(_candyPosRNG, 5, 0), new Quaternion(0, 0, 0, 0));
     }
 }

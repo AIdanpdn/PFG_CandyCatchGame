@@ -534,12 +534,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _candy:
-  - {fileID: 3949553389776209816, guid: 3f731efa04280074facda89b1e5c1c29, type: 3}
-  - {fileID: 8957383447026670259, guid: 2d305ad8a1c0af04c8b8c073699af838, type: 3}
-  - {fileID: 4849281825413216378, guid: 93a7566db46f7ca4e9a0c3a24828b664, type: 3}
-  - {fileID: 2718071592357250960, guid: f10a86057c5beb3409c7c98a1d0a1d41, type: 3}
-  - {fileID: 5176468425257666801, guid: 3d51d77c3826fea49a71e15f4c0c902b, type: 3}
-  - {fileID: 5675523428532201750, guid: f0b9b45ad2ae9af4789d83c97f120dfa, type: 3}
+  - {fileID: 1111761810}
+  - {fileID: 438849246}
+  - {fileID: 311445308}
+  - {fileID: 741672284}
+  - {fileID: 1310905027}
+  - {fileID: 1260942107}
   _candyValue: 050000000a0000000f00000014000000190000001e000000
   _candyRNG: 0
 --- !u!4 &502962243
